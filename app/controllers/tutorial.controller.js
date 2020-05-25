@@ -27,7 +27,7 @@ exports.create = (req, res) => {
         .catch(err => {
             res.status(500).send({
                 message:
-                    err.message || "Some error occurred while creating the Tutorial."
+                    err.message || "Tutorial.create error"
             });
         });
 };
@@ -44,7 +44,7 @@ exports.findAll = (req, res) => {
         .catch(err => {
             res.status(500).send({
                 message:
-                    err.message || "Some error occurred while retrieving tutorials."
+                    err.message || "Tutorial.findAll error"
             });
         });
 };
@@ -59,7 +59,7 @@ exports.findOne = (req, res) => {
         })
         .catch(err => {
             res.status(500).send({
-                message: "Error retrieving Tutorial with id=" + id
+                message: "Tutorial.findOne error for id=" + id
             });
         });
 };
@@ -84,7 +84,7 @@ exports.update = (req, res) => {
         })
         .catch(err => {
             res.status(500).send({
-                message: "Error updating Tutorial with id=" + id
+                message: "Tutorial.update error id=" + id
             });
         });
 };
@@ -109,7 +109,7 @@ exports.delete = (req, res) => {
         })
         .catch(err => {
             res.status(500).send({
-                message: "Could not delete Tutorial with id=" + id
+                message: "Tutorial.destroy error for id=" + id
             });
         });
 };
@@ -126,7 +126,7 @@ exports.deleteAll = (req, res) => {
         .catch(err => {
             res.status(500).send({
                 message:
-                    err.message || "Some error occurred while removing all tutorials."
+                    err.message || "tutorial.deleteAll."
             });
         });
 };
@@ -140,7 +140,7 @@ exports.findAllPublished = (req, res) => {
         .catch(err => {
             res.status(500).send({
                 message:
-                    err.message || "Some error occurred while retrieving tutorials."
+                    err.message || "Tutorial.findAll published error."
             });
         });
 };
