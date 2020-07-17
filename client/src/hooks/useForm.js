@@ -12,7 +12,7 @@ const useForm = ({ initialValues, onSubmit }) => {
     //useRef and useEffect based hooks
     const formRendered = useRef(true)
     useEffect(() => {
-        if (!formRendered.current) {
+        if (formRendered.current) {
             setValues(initialValues);
             setErrors({});
             setTouched({});
@@ -38,7 +38,7 @@ const useForm = ({ initialValues, onSubmit }) => {
     };
 
     const handleSubmit = e => {
-        if (e) event.preventDefault();
+        if (e) e.preventDefault();
         setErrors({ ...errors });
         onSubmit({ values, errors });
     }
