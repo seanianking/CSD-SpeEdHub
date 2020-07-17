@@ -9,6 +9,12 @@ const useForm = ({ initialValues, onSubmit }) => {
     const [onSubmitting, setOnSubmitting] = useState(false);
     const [onBlur, setOnBlur] = useState(false);
 
+
+    //function to reset the form
+    const resetForm = () => {
+        document.getElementById('auditForm').reset();
+    }
+
     //useRef and useEffect based hooks
     const formRendered = useRef(true)
     useEffect(() => {
@@ -41,6 +47,7 @@ const useForm = ({ initialValues, onSubmit }) => {
         if (e) e.preventDefault();
         setErrors({ ...errors });
         onSubmit({ values, errors });
+        resetForm();
     }
 
     return {
