@@ -12,7 +12,7 @@ const useForm = ({ initialValues, onSubmit }) => {
 
     //function to reset the form
     const resetForm = () => {
-        document.getElementById('auditForm').reset();
+        setValues(initialValues)
     }
 
     //useRef and useEffect based hooks
