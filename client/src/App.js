@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import TestForm from './components/TestForm';
+import PersonalInfoForm from './components/PersonalInfoForm';
+
 
 function App() {
   return (
     <div>
-      <TestForm/>
+      <PersonalInfoForm/>
     </div>
   );
 }
