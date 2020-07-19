@@ -16,6 +16,7 @@ function PersonalInfoForm() {
         grade: 0,
         race: '',
         classification: '',
+        dateOfAudit: '',
     };
 
     const {
@@ -34,7 +35,7 @@ function PersonalInfoForm() {
             <form onSubmit={handleSubmit}>
                 <div class="field is-horizontal">
                     <div class="header">
-                        <h1 class="label border-bottom">Special Education File Audit Form</h1>
+                        <h1 style={{fontSize:'40px'}} class="label border-bottom">Special Education File Audit Form</h1>
                     </div>
                 </div>
                 <div class="field is-horizontal">
@@ -49,8 +50,16 @@ function PersonalInfoForm() {
                         </div>
                         <div class="field">
                             <p class="control is-expanded">
-                                <input class="input" name='email' type="email" placeholder="youremail@csd.org" />                                
+                                <input class="input" name='email' type="email" placeholder="youremail@csd.org" />
                             </p>
+                        </div>
+                        <div class="field is-expanded">
+                            <div class="field">
+                                <p class="control is-expanded">
+                                    <input class="input" name='dateOfAudit' type="date" placeholder="Student Date of Birth" />
+                                </p>
+                            </div>
+                            <p class='help'>Date of Audit</p>
                         </div>
                     </div>
                 </div>
@@ -67,96 +76,105 @@ function PersonalInfoForm() {
                         </div>
                         <div class="field">
                             <p class="control is-expanded">
-                                <input class="input" name='studentID' type="number" placeholder="Student ID number" />                                
+                                <input class="input" name='studentID' type="text" placeholder="Student ID" />
                             </p>
                         </div>
-                    </div>
-                </div>
-
-                <div class="field is-horizontal">
-                    <div class="field-label"></div>
-                    <div class="field-body">
                         <div class="field is-expanded">
-                            <div class="field has-addons">
-                                <p class="control">
-                                    <a class="button is-static">+44</a>
-                                </p>
+                            <div class="field">
                                 <p class="control is-expanded">
-                                    <input class="input" type="tel" placeholder="Your phone number" />
+                                    <input class="input" name='dateOfBirth' type="date" placeholder="Student Date of Birth" />
                                 </p>
                             </div>
-                            <p class="help">Do not enter the first zero</p>
+                            <p class='help'>Date of birth</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Department</label>
+                <div class="field-label is-normal">
+                    {/* field label left blank to provide spacing for student information section */}
+                        <label class="label"></label>
                     </div>
                     <div class="field-body">
-                        <div class="field is-narrow">
+                        <div class="field">
                             <div class="control">
                                 <div class="select is-fullwidth">
                                     <select>
-                                        <option>Business development</option>
-                                        <option>Marketing</option>
-                                        <option>Sales</option>
+                                        <option>School</option>
+                                        <option>Preschool</option>
+                                        <option>Kindergarten</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="field is-horizontal">
-                    <div class="field-label">
-                        <label class="label">Already a member?</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field is-narrow">
+                        <div class="field ">
                             <div class="control">
-                                <label class="radio">
-                                    <input type="radio" name="member" />Yes</label>
-                                <label class="radio">
-                                    <input type="radio" name="member" />No</label>
+                                <div class="select is-fullwidth">
+                                    <select>
+                                        <option>Grade</option>
+                                        <option>Preschool</option>
+                                        <option>Kindergarten</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Subject</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
+                        <div class="field ">
                             <div class="control">
-                                <input class="input is-danger" type="text" placeholder="e.g. Partnership opportunity" />
-                            </div>
-                            <p class="help is-danger">This field is required</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Question</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control">
-                                <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+                                <div class="select is-fullwidth">
+                                    <select>
+                                        <option>Race</option>
+                                        <option>White</option>
+                                        <option>Hispanic</option>
+                                        <option>Black</option>
+                                        <option>Native American</option>
+                                        <option>Asian</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="field is-horizontal">
-                    <div class="field-body">
-                        <div class="field">
+                        <div class="field is-expanded">
                             <div class="control">
-                                <button class="button is-primary">Send message</button>
+                                <div class="select is-fullwidth">
+                                    <select>
+                                        <option>Classification</option>
+                                        <option>Autism</option>
+                                        <option>Developmental Delay</option>
+                                        <option>Emotional Disturbance</option>
+                                        <option>Hearing Impairment/Deafness</option>
+                                        <option>Intellectual Disability</option>
+                                        <option>Multiple Disabilities</option>
+                                        <option>Orthopedic Impairment</option>
+                                        <option>Other Health Impairment</option>
+                                        <option>Specific Learning Disability</option>
+                                        <option>Speech/Language Impairment</option>
+                                        <option>Traumatic Brain Injury</option>
+                                        <option>{'Visual Impairment (Including Blindness)'}</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
