@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
-import PersonalInfoForm from './components/PersonalInfoForm';
+import PersonalInfoForm from './components/formComponents/PersonalInfoForm/PersonalInfoForm';
 
 
 function App() {
   return (
-    <div>
-      <PersonalInfoForm/>
-    </div>
+    <section className='hero is-info is-bold is-fullheight'>
+      <div className='box my-5 mx-5'>
+        <PersonalInfoForm />
+      </div>
+    </section>
   );
 }
 
