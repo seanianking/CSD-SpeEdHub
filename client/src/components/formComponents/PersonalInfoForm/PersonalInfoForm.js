@@ -44,18 +44,18 @@ function PersonalInfoForm() {
                     <div class="field-body">
                         <div class="field">
                             <p class="control is-expanded">
-                                <input class="input" name='auditorName' type="text" placeholder="Name" />
+                                <input class="input" name='auditorName' onChange={handleChange} type="text" placeholder="Name" value={values.auditorName}/>
                             </p>
                         </div>
                         <div class="field">
                             <p class="control is-expanded">
-                                <input class="input" name='email' type="email" placeholder="youremail@csd.org" />
+                                <input class="input" name='email' onChange={handleChange} type="email" placeholder="youremail@csd.org" value={values.email}/>
                             </p>
                         </div>
                         <div class="field is-expanded">
                             <div class="field">
                                 <p class="control is-expanded">
-                                    <input class="input" name='dateOfAudit' type="date" />
+                                    <input class="input" name='dateOfAudit' onChange={handleChange} type="date" value={values.dateOfAudit}/>
                                 </p>
                             </div>
                             <p class='help'>Date of Audit</p>
@@ -70,23 +70,23 @@ function PersonalInfoForm() {
                     <div class="field-body">
                     <div class="field">
                             <p class="control ">
-                                <input class="input" name='teacher' type="text" placeholder="Teacher" />
+                                <input class="input" name='teacher' onChange={handleChange} type="text" placeholder="Teacher" value={values.teacher}/>
                             </p>
                         </div>
                         <div class="field">
                             <p class="control ">
-                                <input class="input" name='student' type="text" placeholder="Student name" />
+                                <input class="input" name='student' onChange={handleChange} type="text" placeholder="Student name" value={values.student}/>
                             </p>
                         </div>
                         <div class="field">
                             <p class="control ">
-                                <input class="input" name='studentID' type="text" placeholder="Student ID" />
+                                <input class="input" name='studentID' onChange={handleChange} type="text" placeholder="Student ID" value={values.studentID}/>
                             </p>
                         </div>
                         <div class="field is-expanded">
                             <div class="field">
                                 <p class="control is-expanded">
-                                    <input class="input" name='dateOfBirth' type="date"  />
+                                    <input class="input" name='dateOfBirth' onChange={handleChange} type="date"  value={values.dateOfBirth}/>
                                 </p>
                             </div>
                             <p class='help'>Date of birth</p>
@@ -103,7 +103,7 @@ function PersonalInfoForm() {
                         <div class="field">
                             <div class="control">
                                 <div class="select is-fullwidth">
-                                    <select name='school'>
+                                    <select name='school' value={values.school} onChange={handleChange}>
                                         <option>School</option>
                                         <option>{'Alta View [E]'}</option>
                                         <option>{'Altara [E]'}</option>
@@ -158,7 +158,7 @@ function PersonalInfoForm() {
                         <div class="field ">
                             <div class="control">
                                 <div class="select is-fullwidth">
-                                    <select name='grade'>
+                                    <select name='grade' value={values.grade} onChange={handleChange}>
                                         <option>Grade</option>
                                         <option>Preschool</option>
                                         <option>Kindergarten</option>
@@ -182,7 +182,7 @@ function PersonalInfoForm() {
                         <div class="field ">
                             <div class="control">
                                 <div class="select is-fullwidth">
-                                    <select name='race'>
+                                    <select name='race' value={values.race} onChange={handleChange}>
                                         <option>Race</option>
                                         <option>White</option>
                                         <option>Hispanic</option>
@@ -196,7 +196,7 @@ function PersonalInfoForm() {
                         <div class="field is-expanded">
                             <div class="control">
                                 <div class="select is-fullwidth">
-                                    <select name='classification'>
+                                    <select name='classification' value={values.classification} onChange={handleChange}>
                                         <option>Classification</option>
                                         <option>Autism</option>
                                         <option>Developmental Delay</option>
@@ -216,6 +216,7 @@ function PersonalInfoForm() {
                         </div>
                     </div>
                 </div>
+                <button type="submit">Submit</button>
             </form>
         </div>
     )
