@@ -6,7 +6,7 @@ import useForm from './hooks/useForm'
 import GeneralInformation from './components/formComponents/GeneralInformation/GeneralInformation';
 
 function App() {
-
+ 
   const initialValues = {
     auditorName: '',
     email: '',
@@ -26,7 +26,6 @@ const {
     errors,
     touched,
     handleChange,
-    handleBlur,
     handleSubmit
 } = useForm({
     initialValues, onSubmit: values => console.log({ values })
