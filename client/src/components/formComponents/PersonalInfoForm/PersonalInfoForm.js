@@ -23,15 +23,15 @@ function PersonalInfoForm() {
         errors,
         touched,
         handleChange,
-        handleBlur,
         handleSubmit
     } = useForm({
         initialValues, onSubmit: values => console.log({ values })
     });
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div className='border-bottom pb-6'>
+
+        <div className='border-bottom pb-6'>
+            <form onSubmit={handleSubmit}>
 
                 <div className="field is-horizontal">
                     <div className="field-label is-normal">
@@ -212,8 +212,9 @@ function PersonalInfoForm() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
+
     )
 }
 
