@@ -44,7 +44,6 @@ function EligibilitySection() {
 
     return (
         <div className='border-bottom pb-6'>
-            <form onSubmit={handleSubmit}>
                 <div className="field is-horizontal">
                     <div className='field'>
                         <div className="header">
@@ -788,7 +787,6 @@ function EligibilitySection() {
                         </div>
                     </div>
                 </div>
-            </form>
         </div >
     )
 }

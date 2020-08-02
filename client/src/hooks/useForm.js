@@ -7,7 +7,6 @@ const useForm = ({ initialValues, onSubmit }) => {
     const [errors, setErrors] = useState({});
     const [touched, setTouched] = useState({})
     const [onSubmitting, setOnSubmitting] = useState(false);
-    const [onBlur, setOnBlur] = useState(false);
 
 
     //function to reset the form
@@ -23,7 +22,6 @@ const useForm = ({ initialValues, onSubmit }) => {
             setErrors({});
             setTouched({});
             setOnSubmitting(false);
-            setOnBlur(false);
         }
         formRendered.current = false;
     }, [initialValues]);
@@ -34,13 +32,6 @@ const useForm = ({ initialValues, onSubmit }) => {
         const { name, value } = target;
         e.persist();
         setValues({ ...values, [name]: value });
-    };
-
-    const handleBlur = e => {
-        const { target } = e;
-        const { name } = target;
-        setTouched({ ...touched, [name]: true });
-        setErrors({ ...errors });
     };
 
     const handleSubmit = e => {
@@ -55,7 +46,6 @@ const useForm = ({ initialValues, onSubmit }) => {
         errors,
         touched,
         handleChange,
-        handleBlur,
         handleSubmit,
     };
 }
