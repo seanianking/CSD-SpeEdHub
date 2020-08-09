@@ -13,6 +13,25 @@ function EligibilitySection() {
         eligSixBool: '',
         eligSevenBool: '',
         eligEightBool: '',
+        eligNineBool: '',
+        eligTenBool: '',
+        eligElevenBool: '',
+        eligTwelveBool: '',
+        eligThirteenBool: '',
+        eligFourteenBool: '',
+        eligFifteenBool: '',
+        eligSixteenBool: '',
+        eligSeventeenBool: '',
+        eligEighteenBool: '',
+        eligNineteenBool: '',
+        eligTwentyBool: '',
+        eligTwentyOneBool: '',
+        eligTwentyTwoBool: '',
+        eligTwentyThreeBool: '',
+        eligTwentyFourBool: '',
+        eligTwentyFiveBool: '',
+        eligTwentySixBool: '',
+        eligTwentySevenBool: '',
         eligOneFind: '',
         eligTwoFind: '',
         eligThreeFind: '',
@@ -21,6 +40,25 @@ function EligibilitySection() {
         eligSixFind: '',
         eligSevenFind: '',
         eligEightFind: '',
+        eligNineFind: '',
+        eligTenFind: '',
+        eligElevenFind: '',
+        eligTwelveFind: '',
+        eligThirteenFind: '',
+        eligFourteenFind: '',
+        eligFifteenFind: '',
+        eligSixteenFind: '',
+        eligSeventeenFind: '',
+        eligEighteenFind: '',
+        eligNineteenFind: '',
+        eligTwentyFind: '',
+        eligTwentyOneFind: '',
+        eligTwentyTwoFind: '',
+        eligTwentyThreeFind: '',
+        eligTwentyFourFind: '',
+        eligTwentyFiveFind: '',
+        eligTwentySixFind: '',
+        eligTwentySevenFind: '',
         eligOneFix: '',
         eligTwoFix: '',
         eligThreeFix: '',
@@ -29,7 +67,26 @@ function EligibilitySection() {
         eligSixFix: '',
         eligSevenFix: '',
         eligEightFix: '',
-        evalType: '',
+        eligNineFix: '',
+        eligTenFix: '',
+        eligElevenFix: '',
+        eligTwelveFix: '',
+        eligThirteenFix: '',
+        eligFourteenFix: '',
+        eligFifteenFix: '',
+        eligSixteenFix: '',
+        eligSeventeenFix: '',
+        eligEighteenFix: '',
+        eligNineteenFix: '',
+        eligTwentyFix: '',
+        eligTwentyOneFix: '',
+        eligTwentyTwoFix: '',
+        eligTwentyThreeFix: '',
+        eligTwentyFourFix: '',
+        eligTwentyFiveFix: '',
+        eligTwentySixFix: '',
+        eligTwentySevenFix: '',
+        
     };
 
     const {
@@ -106,7 +163,7 @@ function EligibilitySection() {
                                     <option>2.18 FINDING: No interpreter present at eligibility for alternate home language. Missing documentation of bilingual parent or parent refusal of interpreter.</option>
                                     <option>{`2.19a FINDING: A medical history, from a qualified health professional, supporting the classification of MD is in the file however; it is not documented on the ERS. (A medical history is only required IF specific syndromes, special health problems (e.g., tracheotomy), medication, and long-term medical prognosis are a concern for the individual.) QUALIFIED HEALTH PROFESSIONALS: physician, nurse practitioner, nurse, etc.`}</option>
                                     <option>{`2.19b FINDING: The file needs a medical history, from a qualified health professional, supporting the classification of MD. A copy must be maintained in the file and documented on the ERS. It is not in the file or not from a qualified health professional. (A medical history is only required IF specific syndromes, special health problems (e.g., tracheotomy), medication, and long-term medical prognosis are a concern for the individual.) QUALIFIED HEALTH PROFESSIONALS: physician, nurse practitioner, nurse, etc.`}</option>
-                                    <option>{`2.19c FINDING: The student's classification is MD however; the team cannot obtain necessary medical history, from a qualified health professional, supporting this classification. QUALIFIED HEALTH PROFESSIONALS: physician, nurse practitioner, nurse, etc.`}</option>                               
+                                    <option>{`2.19c FINDING: The student's classification is MD however; the team cannot obtain necessary medical history, from a qualified health professional, supporting this classification. QUALIFIED HEALTH PROFESSIONALS: physician, nurse practitioner, nurse, etc.`}</option>
                                 </select>
                             </div>
                         </div>
@@ -116,15 +173,38 @@ function EligibilitySection() {
                             <div className="select is-fullwidth">
                                 <select name='eligOneFix' value={values.eligOneFix} onChange={handleChange}>
                                     <option>Correction/Fix Forward</option>
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
+                                    <option>2.1 CORRECTION: Start with a review of existing data and complete the eligibility determination process.</option>
+                                    <option>{`2.2 CORRECTION:• To correct this error you must review existing data and reconsider eligibility. Submit documentation of assessments conducted to address areas of concern and any new documentation. Make sure that all areas marked for consent are assessed. • If the only thing consented but not tested was hearing and vision, you must still complete a new eligibility. NOTE: The areas of concern noted on the review of existing data (or referral document) have to align with the areas noted in the consent for evaluation and eligibility determination (evaluation summary).`}</option>
+                                    <option>2.3 FIX FORWARD: Ensure consent is obtained for all areas of concern on the data review moving forward'.</option>
+                                    <option>2.4 CORRECTION: Start with a review of existing data and complete the eligibility determination process.</option>
+                                    <option>2.5 CORRECTION: Start with a review of existing data and complete the eligibility determination process. NOTE: If hearing and vision were consented and not tested, the team must start with a review of existing data and complete the eligibility determination process again.</option>
+                                    <option>2.6a CORRECTION: Start with a review of existing data and complete the eligibility determination process.</option>
+                                    <option>2.6b FIX FORWARD: Ensure eligibility is determined within 45 school days of receiving consent moving forward.</option>
+                                    <option>2.6c CORRECTION: Start with a review of existing data and complete the eligibility determination process.</option>
+                                    <option>2.7 CORRECTION: Draw line through the incorrect date. Make sure that the inaccurate information is still legible. Hand correct the date. Initial and date the entry. </option>
+                                    <option>2.8 CORRECTION: Draw line through the incorrect date. Make sure that the inaccurate information is still legible. Hand correct the date. Initial and date the entry. State the reason for the error in the margin if known.</option>
+                                    <option>2.9 CORRECTION: Start with a review of existing data and complete the eligibility determination process.</option>
+                                    <option>2.10 CORRECTION: Start with a review of existing data and complete the eligibility determination process.</option>
+                                    <option>{`2.11a CORRECTION: Update the ERS with the student's medical and developmental history supporting the classification of OHI (including provider information).`}</option>
+                                    <option>2.11b CORRECTION: Obtain a completed medical form from qualified health and/or mental health professionals.  Start with a review of existing data. Update the ERS with the student's medical and developmental history supporting the classification (including provider information). Complete the eligibility determination process. QUALIFIED HEALTH PROFESSIONALS: physician, nurse practitioner, nurse, etc. QUALIFIED MENTAL HEALTH PROFESSIONALS: psychologist, school psychologist, counselor, or clinical social worker, etc.</option>
+                                    <option>2.11c CORRECTION: The team must reconsider classification and eligibility.</option>
+                                    <option>{`2.12a CORRECTION: Update the ERS with the student's medical and developmental history supporting the classification of AU (including provider information). QUALIFIED HEALTH PROFESSIONALS:  physician, nurse practitioner, nurse, etc.`}</option>
+                                    <option>{`2.12b CORRECTION: Obtain a completed medical form from a qualified health professional. Start with a review of existing data. Update the ERS with the student's medical and developmental history supporting the classification (including provider information). Complete the eligibility determination process. QUALIFIED HEALTH PROFESSIONALS:  physician, nurse practitioner, nurse, etc.`}</option>
+                                    <option>2.12c CORRECTION: The team must reconsider classification and eligibility. QUALIFIED HEALTH PROFESSIONALS: physician, nurse practitioner, nurse, etc.</option>
+                                    <option>2.13a CORRECTION: Start with a review of existing data and complete the eligibility determination process.</option>
+                                    <option>2.13b CORRECTION: Update the ERS with observation information including the observation date and who conducted the observation.</option>
+                                    <option>2.13c FiX FORWARD: Best practice is to have the observation documented on the ERS and in the file.</option>
+                                    <option>2.14a CORRECTION: Start with a review of existing data and complete the eligibility determination process.</option>
+                                    <option>2.14b CORRECTION: Update the ERS with observation information including the observation date and who conducted the observation.</option>
+                                    <option>2.14c FIX FORWARD: Best practice is to have the all three observations documented on the ERS and in the file.</option>
+                                    <option>2.15 CORRECTION: Start with a review of existing data and complete the eligibility determination process.</option>
+                                    <option>2.16a CORRECTION: Start with a review of existing data and complete the eligibility determination process.</option>
+                                    <option>2.16b CORRECTION: Start with a review of existing data and complete the eligibility determination process.</option>
+                                    <option>2.17 CORRECTION: Update the ERS with hearing and vision data and send copy to parents.</option>
+                                    <option>2.18 CORRECTION: Start with a review of existing data and complete the eligibility determination process. Ensure ALS is contacted and an interpreter is present at the meeting.</option>
+                                    <option>{`2.19a CORRECTION: Update the ERS with the student's medical and developmental history supporting the classification of MD (including provider information). QUALIFIED HEALTH PROFESSIONALS: physician, nurse practitioner, nurse, etc.`}</option>
+                                    <option>{`2.19b CORRECTION: Obtain a completed medical form from a qualified health professional. Start with a review of existing data. Update the ERS with the student's medical history supporting the classification (including provider information). Complete the eligibility determination process. QUALIFIED HEALTH PROFESSIONALS: physician, nurse practitioner, nurse, etc.`}</option>
+                                    <option>2.19c CORRECTION: The team must reconsider classification and eligibility. QUALIFIED HEALTH PROFESSIONALS: physician, nurse practitioner, nurse, etc.</option>
                                 </select>
                             </div>
                         </div>
@@ -135,7 +215,7 @@ function EligibilitySection() {
                 <div className='field-body'>
                     <div className='field question'>
                         <div className=''>
-                            <p style={{ fontWeight: 'bold' }}>{'Primary Language?'}</p>
+                            <p style={{ fontWeight: 'bold' }}>{'Date of eligibility determination (2.8)'}</p>
                         </div>
                     </div>
                     <div className='field'>
@@ -224,7 +304,7 @@ function EligibilitySection() {
                 <div className='field-body'>
                     <div className='field question'>
                         <div className=''>
-                            <p style={{ fontWeight: 'bold' }}>{'Is the home language different than the primary language? (2.18) (3.17)'}</p>
+                            <p style={{ fontWeight: 'bold' }}>{'Eligibility determination'}</p>
                         </div>
                     </div>
                     <div className='field'>
@@ -239,6 +319,7 @@ function EligibilitySection() {
                         </div>
                     </div>
                     <div className='field'>
+                        {/* Different selection, no section for correction */}
                         <div className='control is-expanded'>
                             <div className="select is-fullwidth">
                                 <select name='eligThreeFind' value={values.eligThreeFind} onChange={handleChange}>
@@ -313,7 +394,7 @@ function EligibilitySection() {
                 <div className='field-body'>
                     <div className='field question'>
                         <div className=''>
-                            <p style={{ fontWeight: 'bold' }}>{'Alternative Language Services Consulted for primary language other than English?'}</p>
+                            <p style={{ fontWeight: 'bold' }}>{'Is the student eligible for special education services?'}</p>
                         </div>
                     </div>
                     <div className='field'>
@@ -402,7 +483,7 @@ function EligibilitySection() {
                 <div className='field-body'>
                     <div className='field question'>
                         <div className=''>
-                            <p style={{ fontWeight: 'bold' }}>{'Is there a signed Medicaid form (Attached to front of file) (1.1)'}</p>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the parent input used to determine eligibility? (2.16)'}</p>
                         </div>
                     </div>
                     <div className='field'>
@@ -491,7 +572,7 @@ function EligibilitySection() {
                 <div className='field-body'>
                     <div className='field question'>
                         <div className=''>
-                            <p style={{ fontWeight: 'bold' }}>{'Is the box giving consent on the Medicaid form checked (1.2)'}</p>
+                            <p style={{ fontWeight: 'bold' }}>{'Was a data review completed (in file and signed)? (2.9)'}</p>
                         </div>
                     </div>
                     <div className='field'>
@@ -580,10 +661,11 @@ function EligibilitySection() {
                 <div className='field-body'>
                     <div className='field question'>
                         <div className=''>
-                            <p style={{ fontWeight: 'bold' }}>{'Initial placement in file? (1.3)'}</p>
+                            <p style={{ fontWeight: 'bold' }}>{`Date of data review. (2.7)`}</p>
                         </div>
                     </div>
                     <div className='field'>
+                        {/* Needs date selector instead of bool or finding */}
                         <div className='control '>
                             <div className="select ">
                                 <select name='eligSevenBool' value={values.eligSevenBool} onChange={handleChange}>
@@ -669,7 +751,7 @@ function EligibilitySection() {
                 <div className='field-body'>
                     <div className='field question'>
                         <div className=''>
-                            <p style={{ fontWeight: 'bold' }}>{'Is the box on the initial placement form checked? (1.4)'}</p>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
                         </div>
                     </div>
                     <div className='field'>
@@ -756,21 +838,1600 @@ function EligibilitySection() {
             </div>
             <div className="field is-horizontal">
                 <div className='field-body'>
-                    <div className='field '>
+                    <div className='field question'>
                         <div className=''>
-                            <p style={{ fontWeight: 'bold' }}>{'Evaluation type'}</p>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
                         </div>
                     </div>
-                    <div className='field '>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
                         <div className='control is-expanded'>
                             <div className="select is-fullwidth">
-                                <select name='evalType' value={values.evalType} onChange={handleChange}>
-                                    <option>Select</option>
-                                    <option>{'Initial(age 3-17)'}</option>
-                                    <option>{'Initial(age 18-21)'}</option>
-                                    <option>{'Re-eval(age 3-17)'}</option>
-                                    <option>{'Re-eval(age 18-21)'}</option>
-                                    <option>{'Re-eval(age 8-21 with guardian)'}</option>
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
+                <div className='field-body'>
+                    <div className='field question'>
+                        <div className=''>
+                            <p style={{ fontWeight: 'bold' }}>{'Was the existing data sufficient?'}</p>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control '>
+                            <div className="select ">
+                                <select name='eligEightBool' value={values.eligEightBool} onChange={handleChange}>
+                                    <option>Yes/No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control is-expanded'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFind' value={values.eligEightFind} onChange={handleChange}>
+                                    <option>Findings</option>
+                                    <option>1.1 FINDING: Missing medicaid form.</option>
+                                    <option>1.2 FINDING: Medicaid box is not checked to give consent.</option>
+                                    <option>1.3 FINDING: Missing initial placement consent.</option>
+                                    <option>1.4 FINDING: The consent box, on the initial placement consent, is not checked.</option>
+                                    <option>1.5 FINDING: Missing notice of meeting for eligibility but completed in GoalView.</option>
+                                    <option>1.6 FINDING: Missing notice of meeting for current IEP but completed in GoalView. </option>
+                                    <option>1.7 FINDING: Missing notice of meeting for previous IEP but completed in GoalView.</option>
+                                    <option>1.8 FINDING: Missing progress reports but completed in GoalView.</option>
+                                    <option>1.9 FINDING: No progress reports corresponding with current IEP.</option>
+                                    <option>1.10 FINDING: Notice of meeting for current eligibility is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.11 FINDING: Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.12 FINDING: Notice of meeting for previous IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.13 FINDING: TRANSITION SERVICES Notice of meeting for current IEP is missing and/or references the wrong date, verbiage, or required attendees.</option>
+                                    <option>1.14 FINDING: File not organized in new format.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='field'>
+                        <div className='control'>
+                            <div className="select is-fullwidth">
+                                <select name='eligEightFix' value={values.eligEightFix} onChange={handleChange}>
+                                    <option>Correction/Fix Forward</option>
+                                    <option>1.1 CORRECTION: Complete medicaid form.</option>
+                                    <option>1.2 CORRECTION: Have parent checkbox, initial, and date as late entry or complete a new form.</option>
+                                    <option>1.3 CORRECTION:
+                                    • Complete a “replacement” consent for initial placement document and ask parent to sign.
+                                    • Write “replacement” at the top of the document.
+                                        NOTE: This is the only document that you can complete a “replacement” form. This form is dated the date that the parent actually signs the document.</option>
+                                    <option>1.4 CORRECTION: Have parent checkbox, initial, and date as late entry.</option>
+                                    <option>1.5 CORRECTION: Print and file.</option>
+                                    <option>1.6 CORRECTION: Print and file.</option>
+                                    <option>1.7 CORRECTION: Print and file.</option>
+                                    <option>1.8 CORRECTION: Print and file.</option>
+                                    <option>1.9 CORRECTION: Complete Progress Report and file.
+                                        </option>
+                                    <option>{`1.10 FIX FORWARD: Ensure there is a notice of meeting for each eligibility that includes
+                                        1. the correct meeting date,
+                                        2. states "eligibility",
+                                        3. invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4. is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.11 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.12 FIX FORWARD: Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP", 
+                                        3) invites parent/guardian, LEA, SPED and Gen. Ed. teachers and,
+                                        4) is mailed out 5 days in advance.`}
+                                    </option>
+                                    <option>{`1.13 FIX FORWARD: TRANSITION SERVICES Ensure there is a notice of meeting for each IEP that includes; 
+                                        1) the correct meeting date, 
+                                        2) states "IEP" and "transition services",
+                                        3) invites student, parent/guardian, LEA, SPED and Gen. Ed. teachers and outside agency (if prior written consent was given),
+                                        4) is mailed out 5 days in advance.`}</option>
+                                    <option>1.14 CORRECTION: Organize file using new format.</option>
                                 </select>
                             </div>
                         </div>
