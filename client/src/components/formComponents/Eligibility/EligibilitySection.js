@@ -56,7 +56,7 @@ function EligibilitySection() {
                 <div className='field-body'>
                     <div className='field question'>
                         <div className=''>
-                            <p style={{ fontWeight: 'bold' }}>{'Is the file organized in the new format (1.14)?'}</p>
+                            <p style={{ fontWeight: 'bold' }}>{'Is the Eligibility for this student current? (2.1)'}</p>
                         </div>
                     </div>
                     <div className='field'>
