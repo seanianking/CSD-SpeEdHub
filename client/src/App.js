@@ -12,7 +12,6 @@ function App() {
       <div className='box my-5 mx-5'>
         <Header/>
         <MasterForm />
-        <EligibilitySection/>
       </div>
     </section>
   );

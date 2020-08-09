@@ -3,5 +3,6 @@
 }
 .question{
     line-height: 1.5 !important;
-    width: 100%;
+    min-width: 30vh !important;
+    text-align: left !important;
 }
