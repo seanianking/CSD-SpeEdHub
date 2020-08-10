@@ -1,0 +1,8 @@
+.border-bottom{
+    border-bottom: 3px solid lightgrey;
+}
+.question{
+    line-height: 1.5 !important;
+    min-width: 30vh !important;
+    text-align: left !important;
+}
