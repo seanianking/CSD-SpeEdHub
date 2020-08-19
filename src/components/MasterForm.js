@@ -21,7 +21,7 @@ function MasterForm() {
         genOneBool: '',
         genOneFind: '',
         genOneFix: '',
-        genTwoBool: '',
+        primaryLanguage: '',
         genTwoFind: '',
         genTwoFix: '',
         genThreeBool: '',
@@ -513,10 +513,8 @@ function MasterForm() {
                             <div className='field'>
                                 <div className='control '>
                                     <div className="select ">
-                                        <select name='genTwoBool' value={values.genTwoBool} onChange={handleChange}>
-                                            <option>Yes/No</option>
-                                            <option>Yes</option>
-                                            <option>No</option>
+                                        <select name='primaryLanguage' value={values.primaryLanguage} onChange={handleChange}>
+                                            {/* Type input */}
                                         </select>
                                     </div>
                                 </div>
@@ -1700,6 +1698,7 @@ function MasterForm() {
                         </div>
                     </div>
                     <div className="field is-horizontal">
+                        {/* NEEDS DATE PICKER */}
                         <div className='field-body'>
                             <div className='field question '>
                                 <div className=''>

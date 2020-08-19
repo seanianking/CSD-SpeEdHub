@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import firebase from '../firebase'
 
 //custom hook for using a form in react
 const useForm = ({ initialValues, onSubmit }) => {
@@ -6,7 +7,7 @@ const useForm = ({ initialValues, onSubmit }) => {
     const [values, setValues] = useState(initialValues || {});
     const [errors, setErrors] = useState({});
     const [touched, setTouched] = useState({})
-    const [onSubmitting, setOnSubmitting] = useState(false);
+    const [newAudit, setNewAudit] = useState({});
 
 
     //function to reset the form
@@ -21,7 +22,7 @@ const useForm = ({ initialValues, onSubmit }) => {
             setValues(initialValues);
             setErrors({});
             setTouched({});
-            setOnSubmitting(false);
+            setNewAudit({});
         }
         formRendered.current = false;
     }, [initialValues]);
@@ -39,6 +40,8 @@ const useForm = ({ initialValues, onSubmit }) => {
         setErrors({ ...errors });
         onSubmit({ values, errors });
         resetForm();
+        const db = firebase.firestore()
+        db.collection('audits').add({... values, name: newAudit})
     }
 
     return {
