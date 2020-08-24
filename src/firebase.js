@@ -5,15 +5,17 @@ import firebase from "firebase/app"
 //import firestore information
 import 'firebase/firestore';
 
+require('dotenv').config();
+
 const config = {
-  apiKey: "AIzaSyAXHlaPs44bgiToBZALNgrbwpt23EA_6DQ",
+  apiKey: process.env.FB_API,
   authDomain: "csd-speedhub.firebaseapp.com",
   databaseURL: "https://csd-speedhub.firebaseio.com",
   projectId: "csd-speedhub",
   storageBucket: "csd-speedhub.appspot.com",
-  messagingSenderId: "95783610592",
-  appId: "1:95783610592:web:474332040e4cfffe0d0885",
-  measurementId: "G-7MG81NNLJC"
+  messagingSenderId: process.env.FB_SENDER,
+  appId: process.env.FB_APP,
+  measurementId: process.env.FB_MEASURE,
 };
 // Initialize Firebase
 firebase.initializeApp(config);
